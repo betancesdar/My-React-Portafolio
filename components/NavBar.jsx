@@ -43,17 +43,16 @@ const NavBar = () => {
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivateLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivateLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivateLink('education')}>Education & Courses</Nav.Link>
+            <Nav.Link href="#education" className={activeLink === 'education' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivateLink('education')}>Education & Courses</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivateLink('projects')}>Projects</Nav.Link>
-            
+                      
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href='#'><img src= {socialIcon1} alt="linkednin"/></a>
-                <a href='#'><img src= {socialIcon2} alt="github"/></a>
-                <a href='#'><img src= {socialIcon3} alt="twitter"/></a>
+                <a href='https://www.linkedin.com/in/dario-betances-16a213228/'><img src= {socialIcon1} alt="linkednin"/></a>
+                <a href='https://github.com/betancesdar'><img src= {socialIcon2} alt="github"/></a>
             </div>
-            <button className='btn_connect' onClick={() => console.log('Contact ME')}>Contact Me</button>
+            <a href='#connect'> <button className='btn_connect' onClick={() => console.log('Contact ME')}>Contact Me</button></a>
           </span>
         </Navbar.Collapse>
       </Container>

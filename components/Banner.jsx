@@ -58,7 +58,7 @@ const Banner = () => {
                     more than anything that challenges me and teaches me so in that way 
                     we can both grow.
                 </p>
-                <button onClick={()=>console.log('cliked')}>Download Resume in PDF <BiArrowFromTop size={25}/></button>
+                <a href='https://drive.google.com/file/d/1mUhzn0dDkxFJutRZ23emMhBpZXHb_JhM/view?usp=sharing'><button onClick={()=>console.log('cliked')} className='btn_download'>Download Resume in PDF <BiArrowFromTop size={25}/></button></a>
             </Col>
             <Col xs={12} md={6} xl={5}>
                 <img  src={headerImg} alt='DAB-HAPPY-LOGO'/>

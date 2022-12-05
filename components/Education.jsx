@@ -39,7 +39,7 @@ const Education = () => {
         <div>Item 6</div>
       </Carousel>;
   return (
-    <section className='skills' id='skills'>
+    <section className='skills' id='education'>
     <container>
     <Row>
       <Col>
@@ -47,7 +47,7 @@ const Education = () => {
           <h2>
             Education and Courses
           </h2>
-          <p>Here the explanantion of the skills</p>
+          <p>Behind every code there is an enigma!</p>
           <Carousel responsive={responsive} infinite={true} className='skill-slider'>
             <div className='item'>
               <img src={logoedu1} alt='img' />
@@ -66,9 +66,9 @@ const Education = () => {
             </div>
             <div className='item'>
               <img src={logoedu4} alt='img' />
-              <h5>Node-JS Advances</h5>
-              <h5>Angular Advances</h5>
-              <h5>React Advances</h5>
+              <h5>Node-JS Advanced</h5>
+              <h5>Angular Advanced</h5>
+              <h5>React Advanced</h5>
             </div>
             <div className='item'>
               <img src={logoedu5} alt='img' />

@@ -16,10 +16,10 @@ const Projects = () => {
             netUrl: ''
         },
         {
-            title:  'Proyecto 1',
-            description: 'Description of the project in here',
+            title:  'Rick and Morty app',
+            description: 'React app fetching data from an api rest. B',
             imgUrl: proImg2,
-            netUrl: ''
+            netUrl: 'https://dariobetsrickandmorty.netlify.app'
         },
         {
             title:  'Proyecto 1',
@@ -47,7 +47,7 @@ const Projects = () => {
         },
     ]
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col>
@@ -62,7 +62,7 @@ const Projects = () => {
                 <Nav.Link eventKey="second">Mobile</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="third" disabled>Designs</Nav.Link>
+                <Nav.Link eventKey="third">Designs</Nav.Link>
               </Nav.Item>
             </Nav>
             <Tab.Content>
@@ -79,8 +79,32 @@ const Projects = () => {
                         }
                     </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem ipsum</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                <Row>
+                        {
+                          projects.map((project,index) => {
+                            return (
+                                <ProjectCard 
+                                    key={index}
+                                    {...project} />
+                            )
+                          })
+                        }
+                    </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                <Row>
+                        {
+                          projects.map((project,index) => {
+                            return (
+                                <ProjectCard 
+                                    key={index}
+                                    {...project} />
+                            )
+                          })
+                        }
+                    </Row>
+                </Tab.Pane>
             </Tab.Content>
             </Tab.Container>
           </Col>
